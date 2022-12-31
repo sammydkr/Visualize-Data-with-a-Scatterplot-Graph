@@ -1,0 +1,90 @@
+$opa: rgba(0, 0, 0, 0.8);
+$primary: #2ba163;
+body {
+  font: 10px Roboto;
+  text-align: center;
+}
+.country {
+  background-color: $primary;
+  color: #fff;
+  padding: 5px;
+}
+.sep {
+  border-top: 1px solid #444;
+  margin-top: 10px;
+  padding: 10px;
+}
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #2ba163;
+  shape-rendering: crispEdges;
+}
+
+.d3-tip {
+  line-height: 1;
+  font-weight: 400;
+  padding: 12px;
+  background: $opa;
+  color: #fff;
+  width: 200px;
+  border-radius: 2px;
+  z-index: 999;
+  
+  &:after {
+    /* Creates a small triangle extender for the tooltip */
+    box-sizing: border-box;
+    display: inline;
+    font-size: 10px;
+    width: 100%;
+    line-height: 1;
+    color: $opa;
+    content: "\25BC";
+    position: absolute;
+    text-align: center;
+  }
+  
+  &.n:after {
+    /* Style northward tooltips differently */
+    margin: -1px 0 0 0;
+    top: 100%;
+    left: 0;
+  }
+}
+.svg-text, .navbar-brand {
+  font-size: 16px;
+  letter-spacing: 0.1em;
+  fill: $primary;
+  color: $primary;
+  text-transform: uppercase;
+}
+.navbar-brand {
+  font-size: 18px;
+  color: #fff !important;
+}
+.navbar-inverse {
+  background-color: $primary;
+  border-bottom: none;
+  z-index: 888;
+}
+footer {
+  color: #333;
+  padding: 50px;
+  font-size: 12px;
+}
+a {
+  text-decoration: none;
+  color: $primary;
+  font-weight: bold;
+}
+.year {
+  border-left: 1px solid #555;
+  margin-left: 10px;
+  padding: 10px;
+}
+.label {
+  font-size: 10px;
+  font-weight: normal;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
